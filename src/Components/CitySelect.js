@@ -7,7 +7,7 @@ const CitySelect = ()=> {
 
      const onSearch = () => {
         //console.log(city);
-       const URL = `http://api.openweathermap.org/data/2.5/forecast?&q=${city}&cnt=5&appid=2d33d77e59fa1a65556ea0eaf413b187`;
+        const URL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=5&appid=e6f7d23b6d1f8c60547cf396eb425548`;
         fetch(URL)
             .then((response) => response.json())
             .then((data) => {

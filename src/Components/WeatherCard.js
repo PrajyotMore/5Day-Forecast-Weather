@@ -17,7 +17,7 @@ const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon}) =
                 {/* maximum temperature */}
                 <p className="temperature_Min">Max: {temp_max}</p>
                 <p className="humidity">Humidity : {humidity}</p>
-                <p className="latlon" s> latitude : {lat}| longitude : {lon}</p>
+                <p className="latlon"> latitude : {lat}| longitude : {lon}</p>
             </div>
             </div>
             <>

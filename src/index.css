@@ -115,18 +115,91 @@ form > input{
 }
 
 
- @media screen and (max-width: 600px) {
-      .card {
-         width: 50%;
-      }
+
+@media (max-width: 600px) {
+  .card {
+    width: 70vw;
+    height: 8vh;
+    margin-right:3rem;
+  }
+
+  .card-body {
+    padding-top:5rem;
+    font-size: 2rem;
+  }
+
 
 img {
-  width:100%;
-  border-radius: 2px 3px 0 0;
+  width:23%;
+  border-radius: 5px 5px 0 0;
+}   
+form > input {
+    width: 54%;
+    height: 3rem;
+    text-align: center;
+    padding: 18px 16px;
+    margin: 27px 23%;
+    letter-spacing: 1px;
+    line-height: normal;
 }
 
-.card_Body{
-    text-align: center;
-    margin: 1rem;
+.submitBtn {
+    height: 20vh;
+    margin: 0px 30%;
+    padding: 5px 8px;
+    letter-spacing: 2px;
+    border: 1.5px solid grey;
+    outline: none;
+    border-radius: 11px;
+    width: 12rem;
+    font-size: 14px;
 }
-   }
+}
+@media (max-height: 500px) {
+ .card {
+    width: 52vw;
+    height: 100vh;
+    margin-right:7rem;
+}
+  
+
+  .card-body {
+    padding-top:4rem;
+    font-size: 2rem;
+  }
+
+
+img {
+  margin-top: 1rem;
+  width:20%;
+  border-radius: 5px 5px 0 0;
+}
+  
+form > input {
+    width: 54%;
+    height: 3rem;
+    text-align: center;
+    padding: 18px 16px;
+    margin: 27px 23%;
+    letter-spacing: 1px;
+    line-height: normal;
+}
+
+.submitBtn {
+    height: 10vh;
+    margin: 0px 32%;
+    padding: 5px 8px;
+    letter-spacing: 2px;
+    border: 1.5px solid grey;
+    outline: none;
+    border-radius: 11px;
+    width: 10rem;
+    font-size: 14px;
+}
+
+}
+body > span {
+  width: 100vw;
+  text-align: center;
+  color: grey;
+}

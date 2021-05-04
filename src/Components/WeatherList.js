@@ -16,7 +16,7 @@ const WeatherList = ({weathers}) => {
                     lat={city.coord.lat}
                     lon={city.coord.lon} 
                     humidity={main.humidity}
-                    dt={dt * 1000} 
+                    dt={dt} 
                     main={weather[0].main} 
                     icon={weather[0].icon} 
                     />

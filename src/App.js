@@ -1,6 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
 import CitySelect from './Components/CitySelect';
-import WeatherList from './Components/WeatherList';
 import {Route,Switch} from 'react-router-dom';
 import Error from './Error';
 
@@ -9,6 +8,7 @@ const App = () => {
     <>
     <Switch>
       <Route exact path='/' component={CitySelect}/>
+      <CitySelect city = "mumbai"/>
       <Route component={Error}/>
     </Switch>
     </>

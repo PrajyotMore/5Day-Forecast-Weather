@@ -114,6 +114,7 @@ form > input{
   outline: none;
   border-radius: 11px;
   font-size: 20px;
+  font-weight: 900;
 }
 
 .submitBtn:hover{

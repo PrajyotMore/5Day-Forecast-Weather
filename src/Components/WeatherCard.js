@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon}) => {
+const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon, sun, set}) => {
 
     const date = new Date(dt);
     return(
@@ -18,6 +18,7 @@ const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon}) =
                 <p className="temperature_Min">Max: {temp_max}</p>
                 <p className="humidity">Humidity : {humidity}</p>
                 <p className="latlon"> latitude : {lat}| longitude : {lon}</p>
+                <p className="sunset"> sunrise : {sun}| sunset : {set}</p>
             </div>
             </div>
             <>

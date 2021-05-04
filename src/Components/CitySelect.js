@@ -19,7 +19,7 @@ const CitySelect = ()=> {
      }
 
     
-    const renderCityData = (responseInfo: any) => {
+    const renderCityData = (responseInfo) => {
         if (responseInfo === null) {
             return (<div/>);
         }

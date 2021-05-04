@@ -32,7 +32,7 @@ const CitySelect = ()=> {
         <>
 
             <div className="Header">
-                <h1>Keep checking Weather</h1>
+                  <h1>Check Weather 🌧️</h1>
             </div>
             
             <hr/>

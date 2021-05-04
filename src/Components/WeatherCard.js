@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon}) => {
+const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon, sunrise, sunset}) => {
 
     const day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const date = new Date(dt);
@@ -23,8 +23,9 @@ const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon}) =
                 {/* maximum temperature */}
                 <p className="temperature_Min">Max: {temp_max}</p>
                 <p className="humidity">Humidity : {humidity}</p>
+                <p className="sunrise">sunrise : {sunrise}</p>
+                <p className="sunset">sunset : {sunset}</p>
                 <p className="latlon"> latitude : {lat}| longitude : {lon}</p>
-
             </div>
             </div>
             <>

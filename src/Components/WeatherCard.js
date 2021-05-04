@@ -16,8 +16,9 @@ const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon}) =
             <div className="card_Body">
                 <h1 className="title font-effect-outline">{main}</h1>
                  <p className="date">
-                    {dayName} - {date.toLocaleTimeString()}
+                    {dayName} - {date.toLocaleDateString()}
                 </p>
+                <p className="time" style={{paddingTop:'1rem'}}>  {date.toLocaleTimeString()} </p>
                 <p className="temperature_Min">Min : {temp_min}</p>
                 {/* maximum temperature */}
                 <p className="temperature_Min">Max: {temp_max}</p>

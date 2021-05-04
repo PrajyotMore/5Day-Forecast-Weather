@@ -15,6 +15,8 @@ const WeatherList = ({weathers}) => {
                     temp_min={main.temp_min}
                     lat={city.coord.lat}
                     lon={city.coord.lon} 
+                    sunrise={city.coord.sunrise}
+                    sunset={city.coord.sunset}
                     humidity={main.humidity}
                     dt={dt * 1000} 
                     main={weather[0].main} 

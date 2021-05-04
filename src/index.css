@@ -123,7 +123,7 @@ form > input{
 @media (max-width: 500px) {
  .card {
     width: 52vw;
-    height: 100vh;
+    height: 80vh;
     margin-right:7rem;
 }
   

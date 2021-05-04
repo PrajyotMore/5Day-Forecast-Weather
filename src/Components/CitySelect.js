@@ -7,11 +7,12 @@ const CitySelect = ()=> {
 
      const onSearch = () => {
         //console.log(city);
-        const URL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=5&appid=e6f7d23b6d1f8c60547cf396eb425548`;
+       const URL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=5&appid=e6f7d23b6d1f8c60547cf396eb425548`;
         fetch(URL)
             .then((response) => response.json())
             .then((data) => {
                 setData(data);
+                //console.log(data);
             })
             .catch((error) => {
                 console.log(error);
@@ -26,15 +27,14 @@ const CitySelect = ()=> {
         return (
             <WeatherList weathers = {responseInfo}/>
         )
+        
    }    
 
     return(
         <>
-
             <div className="Header">
-                  <h1>Check Weather 🌧️</h1>
+                <h1>Check Weather 🌧️</h1>
             </div>
-            
             <hr/>
             <form>
             <input  

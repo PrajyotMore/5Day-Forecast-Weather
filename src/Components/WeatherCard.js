@@ -9,7 +9,7 @@ const WeatherCard = ({dt, temp_min, temp_max, lat, lon, humidity, main, icon}) =
         {/* get the src from example url and pass the icon prop for icon code */}
             <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="weather_img"/>   
             <div className="card_Body">
-                <h1 className="title font-effect-outline">Cloudy</h1>
+                <h1 className="title font-effect-outline">{main}</h1>
                  <p className="date">
                     {date.toLocaleDateString()} - {date.toLocaleTimeString()}
                 </p>
